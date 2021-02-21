@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Interfaces.cont">
+   <children>
+      <ImageView fitHeight="391.0" fitWidth="759.0" layoutX="79.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@questionImage.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="-3.0" layoutY="-1.0" prefHeight="387.0" prefWidth="82.0" style="-fx-background-color: #FFFFFF;" />
+      <Label layoutX="215.0" style="-fx-background-color: #43B3F5;" text="The Maze">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="58.0" fitWidth="109.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@final00.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="109.0" layoutX="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@final00.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="22.0" layoutY="59.0" text="**You have some questions to answer !!">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="11.0" layoutY="99.0" text="Question : ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="questionText" layoutX="6.0" layoutY="130.0" prefHeight="102.0" prefWidth="363.0" />
+      <RadioButton fx:id="r1" layoutX="11.0" layoutY="237.0" mnemonicParsing="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="r3" layoutX="11.0" layoutY="333.0" mnemonicParsing="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="r2" layoutX="11.0" layoutY="284.0" mnemonicParsing="false">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="answerOne" layoutX="54.0" layoutY="231.0" prefHeight="35.0" prefWidth="547.0" text="Answer One" />
+      <Label fx:id="answerThree" layoutX="53.0" layoutY="328.0" prefHeight="35.0" prefWidth="547.0" text="Answer Tree" />
+      <Label fx:id="answerTow" layoutX="53.0" layoutY="280.0" prefHeight="35.0" prefWidth="547.0" text="Answer Tow" />
+      <Button fx:id="submitBT" layoutX="386.0" layoutY="191.0" mnemonicParsing="false" onAction="#submitBTact" text="Submit">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
